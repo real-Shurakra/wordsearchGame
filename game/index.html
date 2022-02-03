@@ -2,13 +2,13 @@
 <html>
 
     <head>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/jquery.slim.min.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/Notify.js" defer></script>
-        <script src="js/main.js" defer></script>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <script src="../js/jquery.slim.min.js"></script>
+        <script src="../js/popper.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/Notify.js" defer></script>
+        <script src="../js/main.js" defer></script>
     </head>
 
     <body>
@@ -63,7 +63,36 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="col-xl-3"></div>
+                <div class="col-xl-3">
+                    <div class="col-xl-12">
+                        <table class="table">
+                            <thead>
+                                <td>Platz</td>
+                                <td>Name</td>
+                                <td>Versuche</td>
+                                <td>Zeit</td>
+                            </thead>
+                            <tbody id="highScoreList">
+                                
+                            </tbody>
+                        </table>
+                        
+                        <table class="table">
+                            <thead>
+                                <td>Name</td>
+                                <td>Versuche</td>
+                                <td>Zeit</td>
+                            </thead>
+                            <tbody>
+                                <td>
+                                    <input type="text" class="form-control" id="highScoreListInput" maxlength="3">
+                                </td>
+                                <td id="highScoreListRounds"></td>
+                                <td id="highScoreListTime"></td>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
                 <div class="col-xl-3"></div>
                 <div class="col-xl-6">
                     <input type="text" class="form-control" id="wordInput" maxlength="5">
